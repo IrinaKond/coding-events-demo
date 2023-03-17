@@ -93,7 +93,7 @@ public class EventController {
             model.addAttribute("title" + "Invalid Event ID: " + eventId);
         } else {
             Event event = result.get();
-            model.addAttribute("title", event.getname() + " Detais");
+            model.addAttribute("title", event.getName() + " Details");
             model.addAttribute("event", event);
         }
 
